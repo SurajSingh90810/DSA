@@ -108,3 +108,27 @@ function groupWords(arr) {
 }
 
 // console.log(groupWords(["cat", "act", "dog", "god", "tac"]));
+
+// Merge two sorted arrays into one sorted array.
+
+function MergeArray(arr1, arr2) {
+  let result = [];
+
+  result.push(arr1, arr2);
+  return result.flat();
+}
+// console.log(
+//   MergeArray([1, 2, 3, 4, 5, 6, 7, 8, 9], [10, 11, 12, 13, 14, 15, 16]),
+// );
+
+// Capitalize first letter of each word.
+
+function Capitalize(sen) {
+  let give = sen.map((word) => {
+    let first = word.split("")[0].toUpperCase();
+    let rest = word.slice(1);
+    return first + rest;
+  });
+  return give;
+}
+// console.log(Capitalize(["my", "name", "is", "suraj"]));
